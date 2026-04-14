@@ -1,4 +1,4 @@
-# 🎹 Piano Application
+#  Piano Application
 
 A browser-based interactive piano application built with vanilla HTML, CSS, and JavaScript. Play real piano notes, record and replay your sessions, track your practice stats, and level up with a built-in gamification system.
 
@@ -43,7 +43,7 @@ A browser-based interactive piano application built with vanilla HTML, CSS, and 
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 piano/
