@@ -35,7 +35,7 @@ A browser-based interactive piano application built with vanilla HTML, CSS, and 
 - **Daily Challenges** — auto-assigned goal each day (e.g. "Play 50 notes today")
 - **Streak Tracking** — counts consecutive days you practice
 - **Badge System** — unlock badges for milestones:
-  - 🎹First Note
+  - First Note
   -  50 Notes
   -  Level 5
   -  3 Day Streak
@@ -119,10 +119,10 @@ No frameworks. No libraries. No dependencies.
 | Action | How |
 |---|---|
 | Play a note | Click any piano key |
-| Record a session | Click **● Record**, play keys, click **■ Stop** |
-| Replay recording | Click **▶ Playback** |
-| View practice stats | Check the **📊 Stats** panel on the right |
-| Check XP & level | Check the **🎮 Your Progress** panel on the right |
+| Record a session | Click ** Record**, play keys, click **■ Stop** |
+| Replay recording | Click ** Playback** |
+| View practice stats | Check the ** Stats** panel on the right |
+| Check XP & level | Check the ** Your Progress** panel on the right |
 
 ---
 
@@ -148,7 +148,4 @@ Data persists across browser sessions on the same device. Clearing browser data 
 
 ---
 
-##  License
-This project is open source and available under the [MIT License](LICENSE).
 
-"# piano-application" 
