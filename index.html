@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎹 Piano</h1>
+
+  <div class="app-layout">
+
+    <!-- LEFT: PIANO -->
+    <div class="piano-column">
+      <div class="piano">
+        <div class="key white" data-note="C4"><span class="note-label">C</span></div>
+        <div class="key black" data-note="Cs4"></div>
+        <div class="key white" data-note="D4"><span class="note-label">D</span></div>
+        <div class="key black" data-note="Ds4"></div>
+        <div class="key white" data-note="E4"><span class="note-label">E</span></div>
+        <div class="key white" data-note="F4"><span class="note-label">F</span></div>
+        <div class="key black" data-note="Fs4"></div>
+        <div class="key white" data-note="G4"><span class="note-label">G</span></div>
+        <div class="key black" data-note="Gs4"></div>
+        <div class="key white" data-note="A4"><span class="note-label">A</span></div>
+        <div class="key black" data-note="As4"></div>
+        <div class="key white" data-note="B4"><span class="note-label">B</span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: CONTROLS PANEL -->
+    <div class="right-panel">
+
+      <!-- RECORD & PLAYBACK -->
+      <div class="panel-box">
+        <h3 class="panel-title">🎙️ Record & Playback</h3>
+        <div class="btn-group">
+          <button id="rec-btn" onclick="startRecording()">● Record</button>
+          <button onclick="stopRecording()">■ Stop</button>
+          <button onclick="playback()">▶ Playback</button>
+        </div>
+        <p id="status">Press Record, play some keys, then Stop and Playback!</p>
+      </div>
+
+      <!-- STATS -->
+      <div class="panel-box">
+        <div class="panel-title-row">
+          <h3 class="panel-title">📊 Stats</h3>
+          <button class="toggle-btn" onclick="toggleStats()">Show/Hide</button>
+        </div>
+        <div id="stats-panel" class="stats-panel" style="display:none;"></div>
+      </div>
+
+      <!-- GAMIFICATION -->
+      <div class="panel-box">
+        <div class="panel-title-row">
+          <h3 class="panel-title">🎮 Your Progress</h3>
+          <button class="toggle-btn" onclick="toggleGamePanel()">Show/Hide</button>
+        </div>
+
+        <div id="game-panel" style="display:none;">
+          <!-- Level & XP -->
+          <div class="inner-box">
+            <div id="hud-level" class="hud-level">Level 1 — Beginner</div>
+            <div id="hud-xp" class="hud-xp">0 XP</div>
+            <div class="bar-track">
+              <div id="xp-bar-fill" class="bar-fill xp-fill"></div>
+            </div>
+            <div id="hud-streak" class="hud-streak">🔥 0 day streak</div>
+          </div>
+
+          <!-- Daily Challenge -->
+          <div class="inner-box">
+            <h4 class="box-title">📅 Daily Challenge</h4>
+            <div id="challenge-text" class="challenge-text">Loading...</div>
+            <div class="bar-track">
+              <div id="challenge-bar-fill" class="bar-fill challenge-fill"></div>
+            </div>
+            <div id="challenge-progress" class="challenge-progress">0/0</div>
+          </div>
+
+          <!-- Badges -->
+          <div class="inner-box">
+            <h4 class="box-title">🏅 Badges</h4>
+            <div id="badge-list" class="badge-list"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- AUDIO FILES -->
+  <audio id="C4"  src="notes/notes/C.mp3"></audio>
+  <audio id="Cs4" src="notes/notes/Db.mp3"></audio>
+  <audio id="D4"  src="notes/notes/D.mp3"></audio>
+  <audio id="Ds4" src="notes/notes/Eb.mp3"></audio>
+  <audio id="E4"  src="notes/notes/E.mp3"></audio>
+  <audio id="F4"  src="notes/notes/F.mp3"></audio>
+  <audio id="Fs4" src="notes/notes/Gb.mp3"></audio>
+  <audio id="G4"  src="notes/notes/G.mp3"></audio>
+  <audio id="Gs4" src="notes/notes/Ab.mp3"></audio>
+  <audio id="A4"  src="notes/notes/A.mp3"></audio>
+  <audio id="As4" src="notes/notes/Bb.mp3"></audio>
+  <audio id="B4"  src="notes/notes/B.mp3"></audio>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
