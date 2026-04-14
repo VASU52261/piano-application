@@ -133,19 +133,6 @@ All progress is saved automatically in your browser's `localStorage`:
 - `pianoAnalytics` — notes played, practice time, session history
 - `pianoGame` — XP, level, streak, badges, challenge progress
 
-Data persists across browser sessions on the same device. Clearing browser data will reset all progress.
 
----
-
-##  Possible Future Features
-
-- [ ] Keyboard support (play with keyboard keys)
-- [ ] Multiple octaves
-- [ ] Song library with auto-play
-- [ ] Weekly/monthly progress graphs
-- [ ] Leaderboard (multiplayer XP comparison)
-- [ ] Mobile touch support
-
----
 
 
