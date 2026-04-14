@@ -6,7 +6,7 @@ A browser-based interactive piano application built with vanilla HTML, CSS, and 
 
 ##  Preview
 
-> Piano keys on the left, feature panel on the right — separated by a clean divider.
+ Piano keys on the left, feature panel on the right 
 
 ---
 
@@ -119,10 +119,10 @@ No frameworks. No libraries. No dependencies.
 | Action | How |
 |---|---|
 | Play a note | Click any piano key |
-| Record a session | Click ** Record**, play keys, click **■ Stop** |
-| Replay recording | Click ** Playback** |
-| View practice stats | Check the ** Stats** panel on the right |
-| Check XP & level | Check the ** Your Progress** panel on the right |
+| Record a session | Click Record, play keys, click Stop |
+| Replay recording | Click Playback |
+| View practice stats | Check the Stats panel on the right |
+| Check XP & level | Check the Your Progress panel on the right |
 
 ---
 
